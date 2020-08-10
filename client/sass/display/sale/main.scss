@@ -1,0 +1,13 @@
+.saleMain {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns:
+    [page-start] repeat(9, [midd-start] 1fr [midd-end])
+    [page-end];
+
+  grid-template-rows:
+    [full-start]min-content[middle-end] min-content repeat(3, 1fr)
+    [full-end];
+}

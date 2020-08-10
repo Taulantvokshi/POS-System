@@ -1,0 +1,19 @@
+.remove_button {
+  width: 1.6rem;
+  height: 1.6rem;
+  @include flexCenter;
+  border-radius: 3px;
+  transition: 0.3s;
+  cursor: pointer;
+  & > * {
+    fill: grey;
+  }
+
+  &:hover {
+    background-color: #c70d3a;
+
+    & > * {
+      fill: white;
+    }
+  }
+}

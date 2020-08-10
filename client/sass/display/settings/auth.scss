@@ -1,0 +1,155 @@
+.settings_login {
+  height: 100%;
+  @include flexCenter;
+}
+
+.admin_login {
+  border: 1px solid var(--color-primary);
+  position: relative;
+  border-radius: 6px;
+  width: 30rem;
+  height: 23rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  transition: all 0.4s;
+  margin-bottom: 10rem;
+  box-shadow: 0px 0px 124px -70px rgba(0, 0, 0, 1);
+  &_name {
+    width: 100%;
+    margin-top: 6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+
+    color: #bbbbbb;
+    color: rgba(145, 21, 126, 0.7);
+    & > h1 {
+      letter-spacing: 0.2rem;
+    }
+  }
+
+  &_image {
+    position: absolute;
+    top: -5rem;
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+    & > * {
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      border: 3px solid white;
+      box-shadow: 0px 0px 12px -8px rgba(0, 0, 0, 1);
+    }
+  }
+
+  &_form {
+    margin-top: 4rem;
+    height: 15rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & > button {
+      cursor: pointer;
+      width: 8rem;
+      height: 2.5rem;
+      border: none;
+      color: white;
+      background-color: var(--color-primary);
+      @include flexCenter;
+      &:focus {
+        outline: none;
+      }
+    }
+    & > input {
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      font-family: inherit;
+
+      color: inherit;
+      background-color: white;
+      border: 1px solid var(--color-primary);
+      padding: 0.7rem 2rem;
+      border-radius: 4px;
+
+      height: 4rem;
+      transition: all 0.2s;
+      &::-webkit-input-placeholder {
+        font-weight: 100;
+        color: var(--color-grey-light-4);
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &_link {
+    position: absolute;
+    text-decoration: none;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    color: var(--color-primary);
+  }
+}
+
+.admin_signup {
+  border: 1px solid var(--color-primary);
+  position: relative;
+  border-radius: 6px;
+  width: 35rem;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  transition: all 0.4s;
+  margin-bottom: 10rem;
+  box-shadow: 0px 0px 124px -70px rgba(0, 0, 0, 1);
+  &-title {
+    margin-top: 1rem;
+  }
+  & > button {
+    margin-top: 4rem;
+    cursor: pointer;
+    width: 15rem;
+    height: 4rem;
+    border: none;
+    color: white;
+    background-color: var(--color-primary);
+    @include flexCenter;
+    &:focus {
+      outline: none;
+    }
+  }
+  & > input {
+    margin-top: 3rem;
+
+    font-size: 1.7rem;
+    font-family: inherit;
+
+    color: inherit;
+    background-color: white;
+    border: 1px solid var(--color-primary);
+    padding: 0.7rem 2rem;
+    border-radius: 4px;
+
+    height: 4rem;
+    transition: all 0.2s;
+    &::-webkit-input-placeholder {
+      font-weight: 100;
+      color: grey;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}

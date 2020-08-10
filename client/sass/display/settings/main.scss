@@ -1,0 +1,41 @@
+.settings {
+  height: 100%;
+
+  &_header {
+    height: 6rem;
+    // border-bottom: 2px solid var(--color-grey-light-4);
+    &_icons {
+      width: 40rem;
+      height: 6rem;
+
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  //Settings Dsiplay
+  &_display {
+    width: 100%;
+    height: 50rem;
+    //background-color: white;
+    margin-top: 1rem;
+  }
+}
+
+.settings-items {
+  cursor: pointer;
+  margin-right: 2rem;
+  border-bottom: 2px solid var(--color-grey-light-4);
+  height: 4rem;
+  width: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  & > h4 {
+    margin-left: 0.5rem;
+    color: var(--color-grey-dark-2);
+  }
+}
+
+//

@@ -1,0 +1,6 @@
+.display {
+  grid-row: 2 / full-end;
+  grid-column: midd-start 1 / page-end;
+  background-color: var(--color-display);
+  padding: 1rem;
+}
