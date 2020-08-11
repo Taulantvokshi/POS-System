@@ -8,5 +8,7 @@ PayDay offers a settings dashboard where the owner or the authorized personnel c
 
 Technologies used:
 Backend: NodeJS, Express, Sequelize, Postgres, AWS
-Frontend: Javascript, React, Redux, Sass, Html
-Website : pos-systems.herokuapp.com
+Frontend: Javascript, React, Redux, Sass, Html/
+
+
+Website : https://pos-systems.herokuapp.com
